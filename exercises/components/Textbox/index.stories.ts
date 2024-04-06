@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 import { Textbox } from ".";
 
 const meta = {
@@ -15,6 +16,6 @@ export const Default: Story = {
     label: "Label",
     placeholder: "Placeholder",
     value: "",
-    onChange: () => {},
+    onChange: fn(),
   },
 };
